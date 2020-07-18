@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" xmlns:th="https://www.thymeleaf.org">
+
+  <head>
+  <title>Nicole Paes</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="hello.css">
+</head>
+
+<body style="background-color:MintCream;">
+<div class="header">
+  <img src="capa.png" width="100%">
+  
+  <h1 style="color:DarkSlateBlue;" align="center">Olá Pessoas!</h1>
+
+  <img class="fotonicole" src="foto.png" align="right">
+
+  <div class="menu row" >
+    <div class="col"> </div>
+    <div class="col-sm-6">
+    
+    
+      <div class="row">
+        <div class="col">
+          <a href="#sobre">Sobre</a>
+        </div>
+
+        <div class="col">
+        <a class="container" href="/Habilidades">Habilidades</a>
+        </div>
+
+      <div class="col">
+        <a class="container" href="/objetivos">Objetivos</a>
+      </div>
+      <form method="post" th:action="@{/logout}">
+        <button type="submit" value="Sair">
+            Sair
+        </button>
+      </form>
+</div>
+
+ </div>
+<div class="col"> </div>
+  </div>
+</div>
+
+<section class="sobre container" id="sobre">
+  <h2 style="color:DarkSlateBlue;" align="left">Sobre mim</h2>
+
+  <p style="color:DimGray;" align="left">
+    Me chamo Nicole Paes, tenho 17 anos, atualmente faço ensino médio e técnico no Instituto Federal do Espírito Santo no curso Manutenção e Suporte em informática, onde minha paixão por programação começou e cada vez mais vou buscando patamar para meu crescimento pessoal. Busco com estes recursos me engajar no mercado de trabalho e poder crescer expondencialmente rumo a uma vida cada vez melhor e cheia de conhecimento.
+  </p>
+</section>
+
+</body>
+</html>

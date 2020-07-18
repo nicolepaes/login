@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="https://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <title>Objetivos</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="hello.css">
+    </head>
+    <body style="background-color:MintCream;">
+        <div class="menu row" >
+            <div class="col"> </div>
+            <div class="col-sm-6">
+            
+            
+              <div class="row">
+                <div class="col">
+                  <a href="#sobre">Sobre</a>
+                </div>
+        
+                <div class="col">
+                <a class="container" href="/Habilidades">Habilidades</a>
+                </div>
+        
+              <div class="col">
+                <a class="container" href="/objetivos">Objetivos</a>
+              </div>
+              <form method="post" th:action="@{/logout}">
+                <button type="submit" value="Sair">
+                    Sair
+                </button>
+              </form>
+        </div>
+        
+         </div>
+            <div class="col"> </div>
+            </div>
+        </div>
+        <style></style>
+        <h2 style="color:DarkSlateBlue;" align="left">Objetivos</h2>
+
+        <p style="color:DimGray;" align="left">
+            Aprender HTML, CSS, JAVA, JAVASCRIPT e UX-UI em 2020
+        </p>
+<div class="row">
+        <div class="col-sm-4" style="width: 400px">
+            <img class="fotoobjetivo" src="fotoobjetivo.png" height="200" width="400" align="left">
+        </div>
+        <div class="col-sm-4" style="width: 400px">
+            <img class="uxui" src="uxui.png" height="200" width="400" align="left">
+        </div>
+
+    </body>
+</html>
